@@ -25,6 +25,8 @@ resource "aws_iam_role" "pipe_role" {
 
   assume_role_policy = data.aws_iam_policy_document.pipe_assume_role.json
 
+}
+
 
 
 resource "aws_iam_policy" "pipe_policy" {
@@ -86,7 +88,5 @@ resource "aws_pipes_pipe" "pipe" {
   source = var.queue_arn
 
   target = var.step_function_arn
-
-}
 
 }
