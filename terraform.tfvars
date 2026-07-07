@@ -1,7 +1,7 @@
-aws_region="ap-south-1"
+aws_region = "ap-south-1"
 
-environment="dev"
+environment = "dev"
 
-project_name="account-reconciliation"
+project_name = "account-reconciliation"
 
-bucket_name="account-reconciliation-output-dev"
+bucket_name = "account-reconciliation-output-dev"
