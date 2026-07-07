@@ -1,4 +1,4 @@
-variable "aws_region" {
+variable "project_name" {
   type = string
 }
 
@@ -6,7 +6,11 @@ variable "environment" {
   type = string
 }
 
-variable "project_name" {
+variable "step_role_arn" {
+  type = string
+}
+
+variable "notification_lambda_arn" {
   type = string
 }
 

@@ -1,4 +1,4 @@
-variable "aws_region" {
+variable "project_name" {
   type = string
 }
 
@@ -6,10 +6,10 @@ variable "environment" {
   type = string
 }
 
-variable "project_name" {
+variable "queue_arn" {
   type = string
 }
 
-variable "bucket_name" {
+variable "step_function_arn" {
   type = string
 }
