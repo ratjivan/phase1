@@ -1,0 +1,7 @@
+{
+  "name": "generate-report",
+  "version": "1.0.0",
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.835.0"
+  }
+}

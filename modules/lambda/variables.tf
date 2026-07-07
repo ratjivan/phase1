@@ -7,13 +7,11 @@ variable "lambda_source" {
 }
 
 variable "handler" {
-  type    = string
-  default = "index.lambda_handler"
+  type = string
 }
 
 variable "runtime" {
-  type    = string
-  default = "python3.13"
+  type = string
 }
 
 variable "role_arn" {

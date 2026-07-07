@@ -135,7 +135,7 @@ resource "aws_iam_role" "step_role" {
 #########################################
 # Step Function Policy
 #########################################
-  resource "aws_iam_policy" "step_policy" {
+resource "aws_iam_policy" "step_policy" {
 
   name = "${var.project_name}-${var.environment}-step-policy"
 

@@ -37,14 +37,15 @@ module "generate_report_lambda" {
 
   lambda_source = "./lambda/generate-report"
 
+  runtime = "nodejs22.x"
+
+  handler = "index.handler"
+
   role_arn = module.iam.lambda_role_arn
 
   environment_variables = {
-
     QUEUE_URL = module.sqs.queue_url
-
   }
-
 }
 
 module "notification_lambda" {
@@ -55,16 +56,16 @@ module "notification_lambda" {
 
   lambda_source = "./lambda/notification"
 
+  runtime = "nodejs22.x"
+
+  handler = "index.handler"
+
   role_arn = module.iam.lambda_role_arn
 
   environment_variables = {
-
     BUCKET_NAME = module.s3.bucket_name
-
   }
-
 }
-
 module "step_function" {
 
   source = "./modules/step-function"
