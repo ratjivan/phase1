@@ -35,33 +35,33 @@ resource "aws_iam_policy" "pipe_policy" {
 
   policy = jsonencode({
 
-    Version="2012-10-17",
+    Version = "2012-10-17",
 
-    Statement=[
+    Statement = [
 
       {
 
-        Effect="Allow",
+        Effect = "Allow",
 
-        Action=[
+        Action = [
           "sqs:ReceiveMessage",
           "sqs:DeleteMessage",
           "sqs:GetQueueAttributes"
         ],
 
-        Resource=var.queue_arn
+        Resource = var.queue_arn
 
       },
 
       {
 
-        Effect="Allow",
+        Effect = "Allow",
 
-        Action=[
+        Action = [
           "states:StartExecution"
         ],
 
-        Resource=var.step_function_arn
+        Resource = var.step_function_arn
 
       }
 

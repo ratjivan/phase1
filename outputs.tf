@@ -77,3 +77,15 @@ output "pipe_arn" {
   value = module.eventbridge_pipe.pipe_arn
 
 }
+
+output "api_gateway_url" {
+  value = module.api_gateway.invoke_url
+}
+
+output "bucket_name" {
+  value = module.s3.bucket_name
+}
+
+output "bucket_arn" {
+  value = module.s3.bucket_arn
+}

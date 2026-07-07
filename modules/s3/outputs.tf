@@ -9,9 +9,3 @@ output "bucket_arn" {
 output "bucket_id" {
   value = aws_s3_bucket.bucket.id
 }
-
-output "api_gateway_url" {
-
-  value = module.api_gateway.invoke_url
-
-}

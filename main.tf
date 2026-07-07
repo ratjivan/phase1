@@ -17,7 +17,7 @@ module "iam" {
   project_name = var.project_name
 
   environment = var.environment
-  
+
 }
 module "sqs" {
 
